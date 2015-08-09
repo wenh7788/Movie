@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gray"
+    android:keepScreenOn="true"
+    android:orientation="vertical" >
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/check"
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_bg"
+                    android:text="@string/checkfile"
+                    android:textColor="@drawable/black"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/choose"
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_bg"
+                    android:text="@string/choose"
+                    android:textColor="@drawable/black"
+                    android:textSize="18dp" />
+
+                <ImageButton
+                    android:id="@+id/volumebutton"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/imgbutton_bg"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="setvolume"
+                    android:src="@drawable/volume" />
+
+                <ImageButton
+                    android:id="@+id/upbutton"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/imgbutton_bg"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="setvolume"
+                    android:src="@drawable/up" />
+
+                <ImageButton
+                    android:id="@+id/downbutton"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/imgbutton_bg"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="setvolume"
+                    android:src="@drawable/down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/filelab"
+                    android:textColor="@drawable/yellow"
+                    android:textSize="17dp" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp" >
+
+                    <TextView
+                        android:id="@+id/filename"
+                        android:layout_width="245dp"
+                        android:layout_height="23dp"
+                        android:paddingTop="2dp"
+                        android:singleLine="true"
+                        android:text="@string/filename"
+                        android:textColor="@drawable/yellow"
+                        android:textSize="15dp"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:id="@+id/volumeLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="100dp"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="28dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/sound" />
+
+                        <ProgressBar
+                            android:id="@+id/volumeBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="100dp"
+                            android:layout_height="17dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="5dp" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <SurfaceView
+                    android:id="@+id/surfaceView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center_horizontal" />
+
+                <ImageView
+                    android:id="@+id/gobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="mediaplay"
+                    android:src="@drawable/go"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/curtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/time"
+                    android:textColor="@drawable/yellow"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="216dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/maxtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/time"
+                    android:textColor="@drawable/yellow"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/timebar"
+                android:layout_width="fill_parent"
+                android:layout_height="18dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="4dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/playbutton"
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="mediaplay"
+                    android:src="@drawable/play" />
+
+                <ImageButton
+                    android:id="@+id/pausebutton"
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="mediaplay"
+                    android:src="@drawable/pause" />
+
+                <ImageButton
+                    android:id="@+id/resetbutton"
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="mediaplay"
+                    android:src="@drawable/reset" />
+
+                <ImageButton
+                    android:id="@+id/stopbutton"
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="mediaplay"
+                    android:src="@drawable/stop" />
+
+                <ImageButton
+                    android:visibility="gone"
+                    android:id="@+id/backbutton"
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="mediaplay"
+                    android:src="@drawable/last" />
+
+                <ImageButton
+                    android:visibility="gone"
+                    android:id="@+id/nextbutton"
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="mediaplay"
+                    android:src="@drawable/next" />
+            </LinearLayout>
+
+            <include layout="@layout/activity_play_movie" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

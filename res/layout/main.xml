@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" >
+
+        <SurfaceView
+            android:id="@+id/surface"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true" />
+
+        <LinearLayout
+            android:id="@+id/btm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/surface"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:background="@drawable/play_start"
+                android:id="@+id/issrt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black" />
+
+            <SeekBar
+                android:layout_weight="1"
+                android:id="@+id/seekbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null" />
+
+            <Button
+                android:background="@drawable/play_daping"
+                android:id="@+id/quanping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:background="@drawable/play_daping"
+                android:id="@+id/xiaoping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/surface"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="2dp" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/weibo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="奥特激光bibibibibiibibbi"
+                    android:textColor="@color/red"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="600dp" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/corners_bg_reg0_bule"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:hint="我要评论"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="activity_tab1">公告</string>
+	<string name="activity_tab2">系统发布</string>
+	<string name="activity_tab3">网友分享</string>
+	<string name="activity_tab4">我的</string>
+    
+    
+    
+    <!-- 公共 -->
+    <string name="app_name">视频播放</string>
+    <string name="common_abnormal_server">服务器异常&#8230;</string>
+    <string name="common_request_more">查看更多&#8230;</string>
+    <string name="common_requesting">正在请求&#8230;</string>
+    <string name="common_requesting_time_out">请求超时&#8230;</string>
+    <string name="common_querying">正在查询&#8230;</string>
+    <string name="common_buffering">正在缓冲&#8230;</string>
+    <string name="common_loading">正在加载&#8230;</string>
+    <string name="common_logining">正在登录&#8230;</string>
+    <string name="common_sending">正在发送&#8230;</string>
+    <string name="common_downloading">正在下载&#8230;</string>
+    <string name="common_uploading">正在上传&#8230;</string>
+    <string name="common_openning">正在开启&#8230;</string>
+    <string name="common_exitting">正在退出&#8230;</string>
+    <string name="common_clearing">正在清理&#8230;</string>
+    <string name="common_saving">正在保存&#8230;</string>
+    <string name="common_verifying">正在验证&#8230;</string>
+    <string name="common_save_success">保存成功</string>
+    <string name="common_confirm">确定</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_btn_start">启动</string>
+    <string name="common_btn_save">保存</string>
+    <string name="common_btn_enter">进入</string>
+    <string name="common_btn_finish">完成</string>
+    <string name="common_btn_set">设置</string>
+    <string name="common_btn_goto_set">去设置</string>
+    <string name="common_btn_detail">详情</string>
+    <string name="common_btn_delete">删除</string>
+    <string name="common_text_title">标题</string>
+    <string name="common_text_title_empty">请输入标题</string>
+    <string name="common_text_content">正文</string>
+    <string name="common_text_content_empty">请输入正文</string>
+    <string name="common_text_publish">公告</string>
+    <string name="common_text_search">搜索</string>
+    <string name="common_text_order">开通</string>
+    <string name="common_text_send">发送</string>
+    <string name="msg_isnull">发送信息为空！</string>
+    <string name="common_network_unavalible">请打开您的网络连接</string>
+    <string name="common_text_tips">提示</string>
+    <string name="dialog_message_exitapp">确认退出？</string>
+    <string name="dialog_choose_Other">其他</string>
+    <string name="dialog_choose_pic_takephoto">拍照</string>
+    <string name="dialog_choose_pic_formlocal">从本地选择</string>
+    <string name="dialog_load_draff">是否继续编辑草稿？</string>
+    <string name="dialog_save_draff">是否保存为草稿？</string>
+    <string name="dialog_login_by_other">您的帐号已在其他地方登录</string>
+
+    <!-- 错误码 -->
+
+    <string name="error">请求失败！参数错误</string>
+    <string name="error_401_not_auth">帐号或密码错误</string>
+    <string name="error_520_time_out">网络不给力，请稍后重试</string>
+    <string name="common_error_tips">操作失败,错误代号:%s</string>
+
+    
+    
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="filelab">视频文件:</string>
+    <string name="filenoexsit">视频文件不存在</string>
+    <string name="choose">添加视频</string>
+    <string name="filename">提示:查看列表选择播放视频</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="time">00:00:00</string>
+    <string name="notchoose">您还没有选择文件</string>
+    <string name="success">所选文件已添加到播放列表，按MENU键可查看列表</string>
+    <string name="NoFileSelected">您未选择任何文件</string>
+    <string name="playlist">播放列表</string>
+    <string name="updatelist">更新列表</string>
+    <string name="about">关于</string>
+    <string name="exit">退出</string>
+    <string name="checkfile">查看列表</string>
+    <string name="existInList">所选视频已存在于播放列表中，按MENU键可查看列表</string>
+</resources>
